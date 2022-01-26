@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿//Jessica Kinghorn Mission 4
+//Initial Migrations
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Mission4.Migrations
 {

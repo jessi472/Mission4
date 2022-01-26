@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿//Jessica Kinghorn Mission 4
+//HomeController
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Mission4.Models;
 using System;
@@ -15,6 +17,7 @@ namespace Mission4.Controllers
         
         private NewMovieContext _blahContext { get; set; }
 
+        //Catch New Movie Form object instance
         public HomeController(ILogger<HomeController> logger, NewMovieContext someMovie)
         {
             _logger = logger;
@@ -38,12 +41,12 @@ namespace Mission4.Controllers
         [HttpPost]
         public IActionResult NewMovieForm (MovieResponse mr)
         {
-            
-
+            //Filled out form gets passed to mr, sent to database
             _blahContext.Add(mr);
             _blahContext.SaveChanges();
-            return View("Confirmation");
 
+            //View Returns success page
+            return View("Confirmation");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

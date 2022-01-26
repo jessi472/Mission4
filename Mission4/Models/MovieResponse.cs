@@ -1,4 +1,6 @@
-﻿using System;
+﻿//Jessica Kinghorn Mission 4
+//Model for New Movie Form
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -8,6 +10,7 @@ namespace Mission4.Models
 {
     public class MovieResponse
     {
+        //Primary Key
         [Key]
         [Required]
         public int MovieId { get; set; }

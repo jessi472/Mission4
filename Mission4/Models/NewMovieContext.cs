@@ -1,4 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿//Jessica Kinghorn Mission 4
+//Model to seed database and help pass data to database
+
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +15,7 @@ namespace Mission4.Models
         { }
         public DbSet<MovieResponse> Responses { get; set; }
 
+        //Seed 3 Favorite Movies to database
         protected override void OnModelCreating(ModelBuilder mb)
         {mb.Entity<MovieResponse>().HasData(
                 new MovieResponse

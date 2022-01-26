@@ -1,7 +1,12 @@
-﻿
+﻿<!--
+    Jessica Kinghorn Mission 4
+   New Movie Form Page
+    -->
+
 @{
     ViewData["Title"] = "Enter New Movie";
 }
+
 @model Mission4.Models.MovieResponse;
 
 <div>
@@ -11,19 +16,19 @@
 <div>
     <form method="post">
         <label asp-for="Category">Category: </label>
-        <input asp-for="Category" required/><br />
+        <input asp-for="Category" required /><br />
 
         <label asp-for="Title">Title: </label>
-        <input asp-for="Title"  required/><br />
+        <input asp-for="Title" required /><br />
 
         <label asp-for="Year">Year: </label>
-        <input asp-for="Year" required/><br />
+        <input asp-for="Year" required /><br />
 
         <label asp-for="DirectorFirstName">Director First Name: </label>
         <input asp-for="DirectorFirstName" required /><br />
 
         <label asp-for="DirectorLastName">Director Last Name: </label>
-        <input asp-for="DirectorLastName" required/><br />
+        <input asp-for="DirectorLastName" required /><br />
 
         <label asp-for="Rating">Rating: </label>
         <select asp-for="Rating" required>

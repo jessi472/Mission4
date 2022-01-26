@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿<!--
+    Jessica Kinghorn Mission 4
+    Shared Layout Page 
+    -->
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -8,12 +13,13 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
+    <!--Navigation Links-->
     <nav class="nav-link">
         <a asp-controller="Home" asp-action="Index">Home Page |</a>
         <a asp-controller="Home" asp-action="Podcasts">My Podcasts |</a>
         <a asp-controller="Home" asp-action="NewMovieForm">Enter New Movie |</a>
     </nav>
 
-    @RenderBody() 
+    @RenderBody()
 </body>
 </html>
